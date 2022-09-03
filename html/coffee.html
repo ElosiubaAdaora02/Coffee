@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Coffee shop</title>
+            <link rel="stylesheet" href="/fontawesome-free-6.1.1-web/css/all.css">
+            <link rel="stylesheet" href="/fontawesome-free-6.1.1-web/css/fontawesome.min.css">
+            <link rel="stylesheet" href="/fontawesome-free-6.1.1-web/css/solid.css">
+            <link rel="stylesheet" href="/fontawesome-free-6.1.1-web/css/brands.css">
+            <link rel="stylesheet" href="/fontawesome-free-6.1.1-web/css/regular.css">
+
+            <!-- font awesome cdn link  -->
+            <link rel="stylesheet" href="/fonts/font-fig/font-awesome.min.css">
+            <!-- custom css file link  -->
+            <link rel="stylesheet" href="../css/coffee.css">
+            <!-- custom js file link -->
+            <script src="js/coffee.js "></script>
+            
+
+        </head>
+        <body>
+
+            <!-- header section starts here -->
+
+            <header class="header"
+                            <a href="#" class="logo">
+                                <img src="../img/logo.jfif" alt="" id="logo">
+                            </a>
+                                    <nav class="navbar">
+                                            <a href="#home" style="color:rgb(235, 212, 212) ;
+                                             font-size: medium;
+                                            ">
+                                                home</a>
+                                            <a href="#about" style="color:rgb(235, 212, 212) ;
+                                             font-size: medium;
+                                            margin-left: 5.2px;">
+                                                about</a>
+                                            <a href="#menu" style="color:rgb(235, 212, 212) ;
+                                             font-size: medium;
+                                             margin-left: 5.2px;">
+                                                menu</a>
+                                            <a href="#product" style="color:rgb(235, 212, 212) ;
+                                             font-size: medium;
+                                             margin-left: 5.2px;">
+                                                product</a>
+                                            <a href="#review" style="color:rgb(235, 212, 212) ; 
+                                             font-size: medium; 
+                                             margin-left: 5.2px;">
+                                                review</a>
+                                            <a href="#contact" style="color:rgb(235, 212, 212) ; 
+                                             font-size: medium;
+                                             margin-left: 5.2px;">
+                                                contact</a>
+                                            <a href="#blogs" style="color:rgb(235, 212, 212) ;
+                                             font-size: medium;
+                                             margin-left: 5.2px;">
+                                                blogs</a>
+                                    
+                                    </nav>
+
+
+              <div class="icons">
+                <div class="fas fa-search" id="search-btn" style="color: rgb(202, 143, 143);
+                font-size: medium;cursor: pointer;"></div>
+                <div class="fas fa-shopping-cart" id="cart-btn" style="color: rgb(202, 143, 143);
+                font-size: medium;margin-left: 8px;cursor: pointer;">
+                </div>
+                <div class="fas fa-bars" id="menu-btn" style="color: rgb(202, 143, 143);
+                font-size: medium;margin-left: 8px;cursor: pointer;"></div>
+              </div>
+              <div class="search-form">
+                <input type="search" id="search-box" placeholder="search here...">
+                <label for="search-box" class="fas fa-search"></label>
+              </div>
+              <div class="cart-items-container">
+                    <div class="cart-item">
+                        <i class="fa-solid fa-trash-can" id="delete"></i>
+                        <div class="content">
+                            <h4 id="h4">cart-item 01</h4>
+                            <div class="price">$15.99/-</div>
+                        </div>
+                        <img src="../img/item1.jfif" height="50px" width="100px" alt="">
+                       
+                    </div>
+                    <div class="cart-item">
+                        <i class="fa-solid fa-trash-can" id="delete"></i>
+                        <div class="content">
+                            <h4 id="h4">cart-item 02</h4>
+                            <div class="price">$15.99/-</div>
+                        </div>
+                        <img src="../img/item2.jfif" height="50px" width="100px" alt="">
+                        
+                    </div>
+                    <div class="cart-item">
+                        <i class="fa-solid fa-trash-can" id="delete"></i>
+                        <div class="content">
+                            <h4 id="h4">cart-item 03</h4>
+                            <div class="price">$13.35/-</div>
+                        </div>
+                        <img src="../img/item3.jfif" height="50px" width="100px" alt="">
+                       
+                    </div>
+                    <div class="cart-item">
+                        <i class="fa-solid fa-trash-can" id="delete"></i>
+                        <div class="content">
+                            <h4 id="h4">cart-item 04</h4>
+                            <div class="price">$18.29/-</div>
+                        </div>
+                        <img src="../img/item4.jfif" height="50px" width="100px" alt="">
+                       
+                    </div>
+                    <a href="#" class="btn">Checkout Now</a>
+              </div>
+            </header>
+
+           
+
+          
+            <!-- header section ends here -->
+            
+        </body>
+</html>
+
+<style>
+    :root{
+    --main-colour:rgb(235, 104, 126);
+    --black:rgb(29, 27, 27);
+    --bg:rgb(36, 5, 5);
+    --border:1rem solid rgb(141, 121, 121);
+}
+*{
+    font-family: 'Roboto' sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+body{
+    background: var(--bg);
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    cursor: pointer;
+    background-color: var(--main-colour);
+    width: 100%;
+    text-align: center;
+}
+.btn:hover{
+    letter-spacing: 2rem;
+}
+.header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+#logo{
+    height: 5rem;
+}
+.navbar a{
+    margin: 0 1 rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
+.navbar a:hover{
+    color: var(--main-colour);
+    border-bottom: 0.2rem solid var(--main-colour);
+}
+.icons a:hover{
+    color: var(--main-colour);
+    border-bottom: 0.2rem solid var(--main-colour);
+}
+#menu-btn{
+    display: none;
+}
+.search-form{
+    position: absolute;
+    top: 115%;
+    right: 7%;
+    background-color: #fff;
+    width: 40rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+}.search-form input{
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 1rem;
+    text-transform: none;
+}
+.search-form label{
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-left: 1.5rem;
+    color: var(--black);
+}
+.search-form label:hover{
+    color: var(--main-colour);
+}
+.cart-items-container{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    height: calc(100vh - 9.5rem);
+    width: 35rem;
+    background-color: #fff;
+    padding: 0 1.5rem;
+}
+.cart-items-container.cart-item{
+    position: relative;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.cart-items-container.cart-item.fa-time{
+    position: absolute;
+    top: 1rem;
+    right: 10rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--black);
+}
+.cart-items-container.cart-item.fa-time:hover{
+    color: var(--main-colour);
+}
+.X{
+    font-size: 30px;
+    position: absolute;
+    color: black;
+    margin-left: 20vw;
+    font-weight: 800;
+    cursor: pointer;
+}
+.X:hover{
+    color: brown;
+}
+#h4{
+    font-size: 15px;
+    padding-bottom: .0.5rem;
+    color: var(--black);
+    margin-left: 10vw;
+}
+.price{
+    font-size: 15px;
+    color: var(--black);
+    margin-left: 10vw;
+}
+#delete{
+    font-size: 20px;
+    position: absolute;
+    color: rgb(49, 4, 4);
+    margin-left: 20vw;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+
+/* media query */
+@media(max-width:991px){ 
+
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 1.5rem 2rem;
+    }
+}
+
+</style>
